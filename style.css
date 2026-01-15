@@ -1,695 +1,470 @@
 body{
-   background: linear-gradient(to top , rgb(18, 0, 0),
-    rgb(18, 0, 0));
+    position: absolute;
+    background: grey;
+  margin: 0;
 height: 100%;
-width: 100%;
-overflow-x: hidden;
-  background-attachment: fixed;
+     width: 100%;
 }
 
-.visivel{
-    display: block;
+html {
+    scroll-behavior: smooth;
 }
 
-.invisivel{
-    display: none;
-}
-
-
-.menubarra{
+.navbar{
     position: fixed;
-    z-index: 0;
-    width: 0px;
-    height: 610px;
-    background: rgb(255, 255, 255);
-    bottom: 0px;
-    left: 0px;
-    opacity: 20%;
-transition: 2s;
-}
-
-#zap{
-    position: relative;
-    height: 10%;
+    
     width: 100%;
-    left: 0%;
-    top: 5%;
-    border: 2px solid rgb(155, 48, 48);
-    border-left: 0px;
-        border-right: 0px;
-
+    height: 5%;
+    display: flex;
+    z-index: 99;
+     align-items: center;
+    align-content: center;
+    justify-content: center;
+    gap: 5%;
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 60%;
 }
 
-#insta{
-    position: relative;
-    height: 7%;
-    width: 100%;
-    left: 0%;
-    top: 5%;
-    border: 2px solid rgb(155, 48, 48);
-    border-left: 0px;
-        border-right: 0px;
-        border-top: 0px;
-
-}
-
-#peças{
-    position: relative;
-    height: 7%;
-    width: 100%;
-    left: 0%;
-    top: 5%;
-    border: 2px solid rgb(155, 48, 48);
-    border-left: 0px;
-        border-right: 0px;
-        border-top: 0px;
-
-}
-
-#serviços{
-    position: relative;
-    height: 7%;
-    width: 100%;
-    left: 0%;
-    top: 5%;
-    border: 2px solid rgb(155, 48, 48);
-    border-left: 0px;
-        border-right: 0px;
-        border-top: 0px;
-
-}
-
-#anuncio{
-    position: relative;
-    height: 7%;
-    width: 100%;
-    left: 0%;
-    top: 5%;
-    border: 2px solid rgb(155, 48, 48);
-    border-left: 0px;
-        border-right: 0px;
-        border-top: 0px;
-
-}
-
-#story{
-    position: relative;
-    height: 7%;
-    width: 100%;
-    left: 0%;
-    top: 5%;
-    border: 2px solid rgb(155, 48, 48);
-    border-left: 0px;
-        border-right: 0px;
-        border-top: 0px;
-
-}
-
-h4{
-    position: relative;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    color: red
-}
-
-.menubarraaberto{
-    position: fixed;
-    z-index: 999;
-    width: 200px;
-    height: 610px;
-    background: rgb(255, 255, 255);
-    color: red;
-    bottom: 0px;
-    left: 0px;
-transition: 2s;
-    opacity: 100%;
-}
-
-a{
+.navbar a{
+    cursor: pointer;
     text-decoration: none;
+    transition: 0.7s;
+    color: rgba(255, 255, 255, 0.521);
 }
 
-
-.ti{
-    position: relative;
-    right: 50px;
-    width: 120%;
-   height: 680px;
-   bottom: 10px;
-    background: linear-gradient(to top , rgb(0, 0, 0),
-    rgb(194, 194, 194));
+.navbar a:hover{
+    color: white;
 }
 
-#viva{
-    position: relative;
-    z-index: 32;
-    color: rgb(97, 0, 0);
-    font-size: 150px;
-    left: 60px;
-    bottom: 550px;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-font-weight: 12px;
-
+#agendar{
+    position: absolute;
+    top: 0%;
+    right: 1%;
+    width: 4%;
+    height: 40%;
+    border: 1px solid rgba(255, 255, 255, 0.315);
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.7s;
 }
 
-#melhor{
-    position: relative;
-    z-index: 38;
-    color: rgb(255, 199, 199);
-    font-size: 60px;
-    left: 60px;
-    bottom: 650px;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: 5px;
- 
+#agendar:hover{
+background: rgba(255, 255, 255, 0.2);
 }
 
-.foto-tela{
-    position: relative;
+.logo_jp{
+    position: absolute;
+    width: 2%;
+    height: 70%;
+    left: 2%;
+}
+
+.container{
     width: 100%;
     height: 100%;
-    z-index: 28;
+    background: black;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.container_extra{
+    width: 100%;
+    height: 6%;
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 80%;
+    gap: 5%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.img_container{
+    position: absolute;
+     width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.img_container_mobile{
+    position: absolute;
+     width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0%;
+}
+
+.vd_container{
+    position: absolute;
+    opacity: 50%;
+   max-width: 100%;
+   height: auto;
+     z-index: 0;
+}
+
+
+
+.card_container2{
+    z-index: 2;
+    background:linear-gradient(340deg,
+    rgba(32, 0, 0, 0.555),rgba(255, 184, 184, 0.493)) ;
+    font-family:Arial, Helvetica, sans-serif;
+   backdrop-filter: blur(10px);
+    color: rgb(0, 0, 0);
+    height: 40%;
+    width: 20%;
+    font-size: 80%;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 4px 30px black;
+    border: 1px solid rgba(77, 0, 0, 0.329);
+    display: flex;
+    flex-direction:column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
     
 }
-.foto2-tela{
-    position: relative;
+
+
+
+.cards_container2{
     width: 100%;
     height: 100%;
-    bottom: 690px;
-    z-index: 37;
-    
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    gap: 9%;
 }
 
+.card_servcos{
+    position: relative;
+    z-index: 2;
+    width: 40%;
+    height: 50%;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    right: -27%;
+    top: 10%;
+}
 
+.card_servcos p{
+    border-bottom: 1px solid white;
+}
 
-.barra{
-    position: fixed;
-    z-index: 50;
-    left: -4%;
-    bottom: 94%;
-    width: 120%;
-   height: 40px;
-    background-color: rgb(255, 255, 255);
+.title_cardservicos{
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 30%;
+    top: -11%;
+
+    font-size: 200%;
+}
+
+.title_cardservicos h4{
+  color: white;
+    font-family: monospace;
+  margin: 0%;
+
+    font-size: 100%;
+}
+
+.title_cardservicos p{
+color: rgb(255, 255, 255);
+  margin-top: 1%;
+border: none;
+font-size: 50%;
+}
+
+span{
+    color: rgb(59, 0, 0);
 }
 
 .conteudo{
     position: relative;
-    left: 660px;
     width: 100%;
-    bottom: 70px;
-    
-    
-}
-
-
-.menu{
-    position: relative; 
-    z-index: 999999999999999999999999;
-    right: 590px;
-    cursor: pointer;
-    top: 80px;
-    background: white;
-}
-
-.menui{
-    position: relative; 
-    z-index: 1;
-    right: 590px;
-    cursor: pointer;
-    top: 80px;
-    background: white;
-}
-
-.menufecha{
-    position: relative;
-    z-index:9999999999999999999999999999999;
-    background: rgb(17, 0, 255);
-    opacity: 0%;
-    width: 30px;
-    height: 30px;
-    top: 52px;
-    cursor: pointer;
-    right: 590px;
-    
-}
-
-.menufechai{
-    position: relative;
-    z-index:99;
-    background: rgb(30, 255, 0);
-    opacity: 0%;
-    width: 30px;
-    height: 30px;
-    top: 52px;
-    cursor: pointer;
-    right: 590px;
-    
-}
-
-.logo{
-    position: relative; 
-    z-index: 38;
-    left: 650px;
-    top: 18px;
-    width: 40px;
-    height: 30px;
-
-
-}
-
-#navcon{
-    position: relative;
-    right: 200px;
-    text-decoration: none;
-     color: rgb(55, 0, 0);
-
-}
-
-#navpro{
-    position: relative;
-    right: 100px;
-     text-decoration: none;
-      color: rgb(55, 0, 0);
-}
-
-#navmim{
-    position: relative;
- 
- color: rgb(55, 0, 0);    
-  text-decoration: none;
-}
-
-#navme{
-    position: relative;
-    left: 100px;
-    color: rgb(55, 0, 0);
-     text-decoration: none;
-}
-
-
-.conteudo-1{
-    position: relative;
-    right: 8px;
-    bottom: 49px;
-    background-color: rgb(37, 0, 0);
-    color: rgb(63, 0, 0);
-    width: 110%;
-    height: 850px;
-    z-index: 3;
-}
-
-
-
- 
-
-
-.conteudo-2{
-    position: relative;
-    right: 8px;
-    bottom: 47px;
-    background-color: rgb(49, 7, 7);
-    color: rgb(255, 255, 255);
-    width: 110%;
-    height: 500px;
-    z-index: 8;
-}
-
-.conteudo-3{
-    position: relative;
-    right: 8px;
-    bottom: 47px;
-    background-color: rgb(37, 0, 0);
-    color: rgb(255, 255, 255);
-    width: 110%;
-    height: 500px;
-    z-index: 9;
-}
-
-
-.peças{
-    position: relative;
-    width: 45%;
-    height: 47%;
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
-.serviço{
-    position: relative;
-    width: 45%;
-    height: 47%;
-    margin-bottom: 0px;
-        margin-top: 0px;
-        top: 450px;
-left: 22px;
-}
-
-.sombra-foto1{
-    position: relative;
-    width: 45%;
-    height: 47%;
-    margin-bottom: 0px;
-        margin-top: 0px;
-        bottom: 0px;
-left: 690px;
-background: linear-gradient(to bottom, transparent, rgb(0, 0, 0));
-opacity: 70%;
-z-index: 39;
-}
-
-.sombra-foto2{
-    position: relative;
-    width: 45%;
-    height: 47%;
-    margin-bottom: 0px;
-        margin-top: 0px;
-bottom: 1200px;
-background: linear-gradient(to bottom, transparent, rgb(0, 0, 0));
-opacity: 70%;
-z-index: 99999;
-}
-
-#text2{
-    position: relative;
-    z-index: 9099999;
-    color: white;
-text-align: center;
-font-size: 30px;
-top: 700px;
-left: 160px;
-font-family:arial Arial, Helvetica, sans-serif;
-}
-
-#subtext2{
-    position: relative;
-    z-index: 9999999999;
-    color: white;
-text-align: center;
-font-size: 20px;
-top: 680px;
-left: 170px;
-font-family:arial Arial, Helvetica, sans-serif;
-}
-
-.acesse2{
-    position: relative;
-    z-index: 999999999999999;
-    left: 490px;
-    top: 300px;
-    width: 120px;
-    height: 20px;
-    background: rgb(255, 0, 0);
-    color: rgb(255, 255, 255);
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    font-size: 15px;
-    cursor:pointer;
-}
-
-
-.acesse1{
-    position: relative;
-    z-index: 9999999999999999;
-    left: 740px;
-    bottom: 170px;
-    width: 120px;
-    height: 20px;
-    background: rgb(255, 0, 0);
-    color: rgb(255, 255, 255);
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    font-size: 15px;
-    cursor:pointer;
-}
-
-#textbutton1{
-    position: relative;
-    cursor: pointer;
-}
-
-#textbutton2{
-    position: relative;
-    cursor: pointer;
-}
-
-#text1{
-    position: relative;
-    z-index: 999;
-    color: white;
-text-align: center;
-font-size: 40px;
-bottom: 170px;
-left: 362px;
-font-family:arial Arial, Helvetica, sans-serif;
-}
-
-#subtext1{
-    position: relative;
-    z-index: 9999;
-    color: white;
-text-align: center;
-font-size: 20px;
-bottom: 200px;
-left: 405px;
-font-family:arial Arial, Helvetica, sans-serif;
-}
-
-.text11{
-    position: relative;
-    bottom: 580px;
-    right: 300px;
-    z-index: 99999;
-}
-
-.fotoc3{
-    position: relative;
     height: 100%;
-    width: 50%;
+    z-index: 5;
+    
+   
+}
+
+.moto_marca1{
+    position: absolute;
+    width: 100%;
+    opacity: 0%;
+    left: -20%;
+    z-index: 1;
+    height: 100%;
+    transition: 1s;
+}
+
+.moto_marca2{
+    position: absolute;
+    width: 100%;
+    opacity: 0%;
+    left: -20%;
+    z-index: 1;
+    height: 100%;
+    transition: 1s;
+}
+
+.moto_marca3{
+    position: absolute;
+    width: 100%;
+    opacity: 0%;
+    left: -20%;
+    z-index: 1;
+    height: 100%;
+    transition: 1s;
+}
+
+
+.moto_marca1_mobile{
+    position: absolute;
+    width: 100%;
+    opacity: 0%;
+    z-index: 1;
+    height: 100%;
+    transition: 1s;
+}
+
+.moto_marca2_mobile{
+    position: absolute;
+    width: 100%;
+    opacity: 0%;
+    z-index: 1;
+    height: 100%;
+    transition: 1s;
+}
+
+.moto_marca3_mobile{
+    position: absolute;
+    width: 100%;
+    opacity: 0%;
+    z-index: 1;
+    height: 100%;
+    transition: 1s;
+}
+
+.logo_marca1{
+    position: relative;
+    z-index: 5;
+  width: 8%;
+    height: 12%;
+    right: 0%;
+    margin: 2%;
+    
+}
+
+.logo_marca2{
+    position: relative;
+    z-index: 5;
+        margin: 2%;
+
+     width: 8%;
+    height: 12%;
+    right: 0%;
+}
+
+.logo_marca3{
+    position: relative;
+    z-index: 5;
+        margin: 2%;
+
+    width: 8%;
+    height: 12%;
+    right: 0%;
+    
+}
+
+.logo_marca1:hover ~ .moto_marca1{
+opacity: 100%;
+left: 0%;
+    z-index: 1;
+
+}
+
+.logo_marca2:hover ~ .moto_marca3{
+opacity: 100%;
+left: 0%;
+    z-index: 1;
+
+}
+
+.logo_marca3:hover ~ .moto_marca2{
+opacity: 100%;
+left: 0%;
     z-index: 1;
 }
 
-.fotoc3shadow{
+.marca{
     position: relative;
-    height: 100%;
-    width: 50%;
-    background: linear-gradient(to bottom, transparent, rgb(0, 0, 0));
-opacity: 90%;
-z-index: 999999999;
-bottom: 105%;
-color: white;
-}
-
-#textc3{
-    position: relative;
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    top: 59%;
-    left: 110%;
-    width: 60%;
-}
-
-#texttc3{
-    position: relative;
-    font-size: 45px;
-    font-family: Arial, Helvetica, sans-serif;
-    bottom: 0%;
-    left: 110%;
-    width: 60%;
-   line-height: 1.3em;
-}
-
-.acesse3{
-    position: relative;
-    background: red;
-    color: white;
-    width: 150px;
-    height: 50px;
-    z-index: 9999999999999999999999999;
-    left: 110%;
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    top: 60%;
-    cursor: pointer;
-}
-
-#abutton{
-    color: white;
-}
-
-#abutton2{
-    color: white;
-}
-
-#acesse3t{
-    position: relative;
-    top: 25%;
-    cursor: pointer;
+     display: flex;
+    flex-direction: column;
+   height: 100%;
+   align-items: end;
+   justify-content: center;
 }
 
 @media(max-width:768px){
-.sombra-foto1{
-    position: relative;
-    left: 384px;
-}
-
-    .foto-tela{
-        position: relative;
-        width: 157%;
+    .container{
+        width: 100%;
+        height: 50%;
     }
 
-    .conteudo-1{
-        position: relative;
-        width: 178%;
-    }
-
-     .conteudo-2{
-        position: relative;
-        width: 178%;
-    }
-
-     .conteudo-3{
-        position: relative;
-        width: 178%;
-    }
-{
-    outline: auto red;
+    .img_container{
+    position: absolute;
+     width: 100%;
+    height: 50%;
+    z-index: 1;
 }
 
-#abutton{
-    color: white;
-}
-
-#abutton2{
-    color: white;
-}
-
-.conteudo{
-    position: relative;
-    left: 30px;
-    bottom: 60px;
-}
-.menu{
-    position: relative;
-    left: 30px;
-    top: 70px;
-}
-
-.menufechai{
-    position: relative;
-    left: 30px;
-    opacity: 0%;
-    top: 40px;
-
-}
-.menufecha{
-    position: relative;
-    left: 30px;
-    opacity: 0%;
-    top: 40px;
-
-}
-
-.menubarraaberto{
-    position: fixed;
-    bottom: 0%;
-    font-size: 30px;
-     height: 97%;
-
-    z-index: 9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999;
-}
-
-#text1{
-   
-    width: 50px;
-    left: 640px;
-}
-
-#subtext1{
-  
-    width: 300px;
-    left: 600px;
-}
-
-#viva{
-    position: relative;
-    left: 230px;
-    bottom: 770px;
+.vd_container{
+       position: absolute;
     opacity: 100%;
+   max-width: 100%;
+   height: auto;
+     z-index: 0;
+     
 }
 
-#melhor{
+#agendar{
+    right: 5%;
+    width: 13%;
+}
+
+.logo_jp{
+    left: 5%;
+    width: 8%;
+    height: 60%;
+}
+
+h2{
+    font-size: 80%;
+}
+
+.card_container2{
+    width: 40%;
+      background:linear-gradient(340deg,
+    rgba(32, 0, 0, 0.315),rgba(255, 184, 184, 0.342)) ;
+   backdrop-filter: blur(5px);
+}
+
+.card_container2 p{
+    text-decoration: none;
+    font-size: 70%;
+}
+
+.navbar{
+    width: 100%;
+}
+
+.card_servcos{
+    width: 50%;
+    height: 80%;
+     right: 0%;
+    top: 0%;
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+    font-size: 80%;
+       background:linear-gradient(340deg,
+    rgba(0, 0, 0, 0.270),rgba(255, 255, 255, 0.270)) ;
+   backdrop-filter: blur(5px);
+   color: rgb(0, 0, 0);
+     border-radius: 5px;
+    box-shadow: 0 4px 30px black;
+    border: 1px solid rgba(0, 0, 0, 0.329);
+}
+
+.card_servcos p{
+    width: 90%;
+    margin: 5%;
+    font-size: 80%;
     position: relative;
-    left: 160px;
-    bottom: 600px;
-    opacity: 100%;
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+
+.title_cardservicos{
+    font-size: 100%;
+    width: 100%;
+    position: relative;
+    top: 0%;
     text-align: center;
 }
 
-.menubarra{
-    position: fixed;
-        font-size: 30px;
-left: -120px;
+.title_cardservicos p{
+    border: none;
+    color: black;
+}
 
-    bottom: 0%;
-    height: 97%;
-    z-index: 9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999;
+.img_container_mobile{
+    position: absolute;
+     width: 100%;
+    height: 50%;
+    z-index: 2;
+    opacity: 100%;
+}
+
+.marca{
+    flex-direction: row;
+    align-items: center;
+}
+
+.logo_marca1{
+    width: 20%;
+    height: 20%;
+}
+
+.logo_marca2{
+    width: 20%;
+    height: 20%;
+}
+
+.logo_marca3{
+    width: 20%;
+    height: 20%;
+}
+
+.logo_marca3:hover ~ .moto_marca3_mobile{
+opacity: 100%;
+    z-index: 1;
+}
+
+.logo_marca3:hover ~ .moto_marca2{
+opacity: 0%;
+    z-index: 1;
 }
 
 
-.logo{
-    position: relative;
-    top: 10px;
-    left: 590px;
-}
-    .barra{
-        position: fixed;
-        bottom: 97%;
-        width: 104%;
-    }
-
-    .acesse1{
-        position: relative;
-        left: 345px;
-    }
-
-    .acesse2{
-        position: relative;
-        left: 160px;
-    }
-
-    #text2{
-        position: relative;
-        left: 50px;
-    }
-
-    #subtext2{
-        position: relative;
-        left: 60px;
-    }
-
-    .serviço{
-        position: relative;
-        left: 57px;
-    }
-
-    #texttc3{
-position: relative;
-bottom: 200px;
-font-size: 43px;
-    }
-
-        #textc3{
-position: relative;
-top: 270px;
-font-size: 20px;
-    }
-
-.acesse3{
-    position: relative;
-    top: 280px;
+.logo_marca2:hover ~ .moto_marca2_mobile{
+opacity: 100%;
+    z-index: 1;
 }
 
+.logo_marca2:hover ~ .moto_marca3{
+opacity: 0%;
+    z-index: 1;
+}
 
+.logo_marca1:hover ~ .moto_marca1_mobile{
+opacity: 100%;
+    z-index: 1;
+}
+
+.logo_marca1:hover ~ .moto_marca1{
+opacity: 0%;
+    z-index: 1;
+}
 
 }
