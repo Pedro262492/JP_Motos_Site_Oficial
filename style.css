@@ -340,6 +340,7 @@ left: 0%;
 #agendar{
     right: 5%;
     width: 13%;
+    text-align: center;
 }
 
 .logo_jp{
@@ -372,17 +373,14 @@ h2{
     width: 50%;
     height: 80%;
      right: 0%;
+     margin-right: 50%;
     top: 0%;
     display: flex;
     flex-direction: column;
    align-items: center;
     font-size: 80%;
-       background:linear-gradient(340deg,
-    rgba(0, 0, 0, 0.270),rgba(255, 255, 255, 0.270)) ;
-   backdrop-filter: blur(5px);
-   color: rgb(0, 0, 0);
      border-radius: 5px;
-    box-shadow: 0 4px 30px black;
+ 
     border: 1px solid rgba(0, 0, 0, 0.329);
 }
 
@@ -391,21 +389,33 @@ h2{
     margin: 5%;
     font-size: 80%;
     position: relative;
-    text-align: center;
-    border-bottom: 1px solid black;
+        text-align: start;
+
+    border-bottom: 1px solid rgb(255, 255, 255);
 }
+
+
 
 .title_cardservicos{
     font-size: 100%;
     width: 100%;
     position: relative;
     top: 0%;
-    text-align: center;
+    text-align: start;
 }
+
+.title_cardservicos h4{
+    
+   margin-left: 5%;
+}
+
+
 
 .title_cardservicos p{
     border: none;
-    color: black;
+        text-align: start;
+
+    color: rgb(255, 255, 255);
 }
 
 .img_container_mobile{
