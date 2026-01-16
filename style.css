@@ -401,6 +401,7 @@ h2{
     width: 100%;
     position: relative;
     top: 0%;
+    margin-bottom: 5%;
     text-align: start;
 }
 
@@ -409,7 +410,9 @@ h2{
    margin-left: 5%;
 }
 
-
+span{
+    color: rgb(134, 0, 0);
+}
 
 .title_cardservicos p{
     border: none;
