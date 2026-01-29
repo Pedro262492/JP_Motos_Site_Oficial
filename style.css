@@ -101,11 +101,13 @@ background: rgba(255, 255, 255, 0.2);
 }
 
 .vd_container{
-    position: absolute;
-    opacity: 50%;
-   max-width: 100%;
-   height: auto;
-     z-index: 0;
+ position: relative;
+    opacity: 70%;
+    width: 100%;
+    z-index: 0;
+margin-bottom: 10%;
+
+
 }
 
 
@@ -333,6 +335,7 @@ left: 0%;
     opacity: 100%;
    max-width: 100%;
    height: auto;
+   top: 60%;
      z-index: 0;
      
 }
