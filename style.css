@@ -344,7 +344,7 @@ left: 0%;
     }
 
     100%{
-        transform: translateX(-50%);
+        transform: translateX(-54%);
     }
 }
 
@@ -458,13 +458,19 @@ text-align: center;
     width: 200px;
 }
 
+.sobrenos_conteudo{
+
+}
+
 .blocks{
-    height: 80%;
+    height: 90%;
     width: 100%;
+
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
+    gap: 2%;
 }
 
 .sobrenos_blocks{
@@ -485,7 +491,7 @@ text-align: center;
 .mensagem{
     height: 10%;
     text-align: center;
-    margin-top: 8%;
+    margin-top: 0%;
     font-size: 80%;
 }
 
