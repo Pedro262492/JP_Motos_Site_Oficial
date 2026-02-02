@@ -19,4 +19,3 @@ const menuaba = document.getElementById("menubarra");
       menuf.classList.remove("menufecha");
       menuf.classList.add("menufechai"); 
     }
-
