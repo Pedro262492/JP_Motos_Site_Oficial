@@ -384,8 +384,10 @@ text-align: center;
     letter-spacing: normal;
     content: "100%";
     font-size: 50px;
-        color: rgb(129, 10, 10);
+        text-shadow: 0 0 12px #FFFFFF;
 
+        color: #FFFFFF;
+font-family: "monospace";
     animation: porcentagem 0.8s;
 }
 
@@ -492,7 +494,7 @@ text-align: center;
     height: 10%;
     text-align: center;
     margin-top: 0%;
-    font-size: 80%;
+    font-size: 60%;
 }
 
     .container{
@@ -521,6 +523,10 @@ text-align: center;
     right: 5%;
     width: 13%;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
 }
 
 .logo_jp{
