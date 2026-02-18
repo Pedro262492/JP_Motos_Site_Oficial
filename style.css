@@ -68,7 +68,7 @@ animation-range: entry 90% cover 100%;
     justify-content: end;
     align-items: center;
    position: fixed;
-   z-index: 99;
+   z-index: 99999;
 }
 
 .navbar a{
