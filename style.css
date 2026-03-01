@@ -232,7 +232,7 @@ animation-range: entry 90% cover 100%;
 .conteudo img{
     width: 40%;
     height: 50%;
-    z-index: 2;
+    z-index: 999999;
     position: fixed;
     left: 50%;
 
